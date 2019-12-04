@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,20 +17,26 @@
         >
     </Button>
 
+    <com.otaliastudios.cameraview.CameraView
+        android:layout_width="match_parent"
+        android:id="@+id/camView"
+        android:translationZ="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+    </com.otaliastudios.cameraview.CameraView>
     <com.example.smartattendence.Helper.GraphicOverlay
         android:id="@+id/graphic_overlay"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_above="@id/DFButton">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:translationZ="1dp">
 
     </com.example.smartattendence.Helper.GraphicOverlay>
-
-
-    <eu.livotov.labs.android.camview.CameraLiveView
-        android:id="@+id/camView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-    </eu.livotov.labs.android.camview.CameraLiveView>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent"
+        android:translationZ="1dp" />
 
 </RelativeLayout>

@@ -8,7 +8,7 @@ import android.graphics.RectF;
 
 public class RectOverlay extends GraphicOverlay.Graphic {
 
-    private int mRectcolor = Color.GREEN;
+    private int mRectcolor = Color.RED;
     private float mStrokeWidth = 4.0f;
     private Paint mRectPaint;
     private GraphicOverlay graphicOverlay;
